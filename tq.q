@@ -43,6 +43,7 @@ qf2:("NC*FIFICICCCCCCCCCCNNCC";enlist"|"); qg2:{x};
 / 3.2
 / 3.3
 
+//Conditional Statement
 if[(count Q:F"splits_us_all_bbo_*[0-9]")within 1 25;-1"missing quote splits";exit 1];
 \ts {foo2[`quote;qh2;qf2;qg2]x}each .q.asc Q;
 \ts {foo2[`trade;th2;tf2;tg2]x}each F"eqy_us_all_trade_[0-9]*";
